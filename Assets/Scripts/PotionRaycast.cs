@@ -8,7 +8,7 @@ public class PotionRaycast : MonoBehaviour
     void Update()
     {
         // วาดเส้น Ray
-        Debug.DrawRay(shootPos.position, transform.forward * rayLength, Color.green);
+        Debug.DrawRay(shootPos.position, -transform.forward * rayLength, Color.green);
 
         // คลิกเมาส์ขวา
         if (Input.GetMouseButtonDown(1))

@@ -358,9 +358,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1261254055}
+      - m_Target: {fileID: 6032398840246967538}
         m_TargetAssemblyTypeName: AddForce, Assembly-CSharp
-        m_MethodName: SetAccel500
+        m_MethodName: SetAccel200
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -592,7 +592,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: power_500
+  m_text: a = 500
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1090,7 +1090,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: power_1000
+  m_text: a = 1000
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1605,7 +1605,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1261254055}
+      - m_Target: {fileID: 4973808250585613734}
         m_TargetAssemblyTypeName: AddForce, Assembly-CSharp
         m_MethodName: SetAccel200
         m_Mode: 1
@@ -1904,7 +1904,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1641149921}
-  - component: {fileID: 1641149920}
   m_Layer: 0
   m_Name: Potions
   m_TagString: Untagged
@@ -1912,21 +1911,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1641149920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1641149919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8587444710cbd774e8c70c72ec69b722, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AddForce
-  force: 0
-  mass: 0
-  accel: 0
 --- !u!4 &1641149921
 Transform:
   m_ObjectHideFlags: 0
@@ -2007,7 +1991,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: power_200
+  m_text: a = 200
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2351,7 +2335,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1261254055}
+      - m_Target: {fileID: 8619895942810245172}
         m_TargetAssemblyTypeName: AddForce, Assembly-CSharp
         m_MethodName: SetAccel1000
         m_Mode: 1
@@ -3004,6 +2988,7 @@ GameObject:
   - component: {fileID: 5369652114700529894}
   - component: {fileID: 1676723539389563003}
   - component: {fileID: 8619895942810245171}
+  - component: {fileID: 8619895942810245172}
   m_Layer: 0
   m_Name: potion low4
   m_TagString: Potions
@@ -3258,6 +3243,7 @@ GameObject:
   - component: {fileID: 5204539196485851604}
   - component: {fileID: 5526589434634935741}
   - component: {fileID: 6032398840246967537}
+  - component: {fileID: 6032398840246967538}
   m_Layer: 0
   m_Name: potion low3
   m_TagString: Potions
@@ -3292,6 +3278,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6032398840246967538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6032398840246967536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8587444710cbd774e8c70c72ec69b722, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AddForce
+  force: 0
+  mass: 0
+  accel: 0
 --- !u!33 &8095206785487475738
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3342,6 +3343,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8619895942810245172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2205782892504764299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8587444710cbd774e8c70c72ec69b722, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AddForce
+  force: 0
+  mass: 0
+  accel: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

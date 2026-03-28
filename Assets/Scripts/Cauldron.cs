@@ -7,13 +7,13 @@ public class Cauldron : MonoBehaviour
         if (other.CompareTag("Potions"))
         {
             // เปลี่ยนสีหม้อ
-            GetComponent<Renderer>().material.color = Color.green;
+            GetComponent<Renderer>().material.color = Color.yellow;
 
             Rigidbody rb = other.GetComponent<Rigidbody>();
 
             if (rb != null)
             {
-                rb.velocity = Vector3.zero;
+                rb.linearVelocity = Vector3.zero;
                 rb.angularVelocity = Vector3.zero;
             }
         }
@@ -21,7 +21,7 @@ public class Cauldron : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Obstacle"))
+        if (collision.gameObject.CompareTag("Obstacles"))
         {
             GetComponent<Renderer>().material.color = Color.red;
 

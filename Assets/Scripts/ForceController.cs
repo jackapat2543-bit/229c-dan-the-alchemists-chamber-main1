@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class AddForce : MonoBehaviour
+public class ForceController : MonoBehaviour
 {
     public float force;
     public float mass;

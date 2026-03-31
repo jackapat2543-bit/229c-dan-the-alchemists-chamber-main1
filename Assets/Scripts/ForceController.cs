@@ -2,32 +2,36 @@ using UnityEngine;
 
 public class ForceController : MonoBehaviour
 {
-    public float force;
-    public float mass;
     public float accel;
+    Rigidbody rb;
 
-    void CalculateForce()
+    void Start()
     {
-        mass = GetComponent<Rigidbody>().mass;
-        force = mass * accel;
-        GetComponent<Rigidbody>().AddForce(force, force, 0);
+        rb = GetComponent<Rigidbody>();
     }
 
+    public void CalculateAndApplyForce()
+    {
+        float mass = rb.mass;
+        float force = mass * accel;
+        rb.AddForce(new Vector3(0, 0, force));
+        Debug.Log($"Mass {mass} kg with accel {accel} m/s^2 = {force} N");
+    }
     public void SetAccel200()
     {
         accel = 200f;
-        CalculateForce();
+        CalculateAndApplyForce();
     }
 
     public void SetAccel500()
     {
         accel = 500f;
-        CalculateForce();
+        CalculateAndApplyForce();
     }
 
     public void SetAccel1000()
     {
         accel = 1000f;
-        CalculateForce();
+        CalculateAndApplyForce();
     }
 }
